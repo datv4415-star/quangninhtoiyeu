@@ -1,0 +1,95 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.container{
+    width:500px;
+    background:white;
+    padding:40px;
+    border-radius:30px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    z-index:2;
+}
+
+.container img{
+    width:120px;
+    margin-bottom:20px;
+}
+
+h1{
+    color:#ff4d6d;
+    margin-bottom:20px;
+}
+
+p{
+    color:#555;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+
+button{
+    padding:15px 25px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:18px;
+    margin:10px;
+    transition:0.3s;
+}
+
+#forgiveBtn{
+    background:#ff4d6d;
+    color:white;
+}
+
+#forgiveBtn:hover{
+    transform:scale(1.1);
+}
+
+#noBtn{
+    background:#ccc;
+}
+
+#message{
+    margin-top:30px;
+    color:#ff4d6d;
+}
+
+.heart{
+    position:absolute;
+    color:red;
+    font-size:25px;
+    animation:fall 5s linear infinite;
+}
+
+@keyframes fall{
+    from{
+        transform:translateY(-100px);
+        opacity:1;
+    }
+    to{
+        transform:translateY(100vh);
+        opacity:0;
+    }
+}
+#canvas{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    pointer-events:none;
+}
